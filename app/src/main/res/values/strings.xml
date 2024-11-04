@@ -1,0 +1,33 @@
+<resources>
+    <string name="task_name">Task Name</string>
+    <string name="task_selected">Wash Dishes</string>
+    <string name="do_every">Do Every</string>
+    <string name="mon">Mon</string>
+    <string name="tue">Tue</string>
+    <string name="wed">Wed</string>
+    <string name="thu">Thu</string>
+    <string name="fri">Fri</string>
+    <string name="assign_to">Assign To</string>
+    <string name="father">Father</string>
+    <string name="mother">Mother</string>
+    <string name="child_1">Child 1</string>
+    <string name="child_2">Child 2</string>
+    <string name="create">CREATE</string>
+    <string name="app_name">Create Task</string>
+    <string name="kitchen">Kitchen</string>
+    <string name="back_arrow">Back arrow</string>
+    <string name="kitchen_image">Kitchen image</string>
+    <string name="completed_count">%1$d ✔</string>
+    <string name="incomplete_count">%1$d ❌</string>
+    <string name="title">Kitchen</string>
+    <string name="add_task">Add Task</string>
+    <string name="task_name_label">Task Name</string>
+    <string name="task_name_hint">Enter Task Name</string>
+    <string name="sat">Sat</string>
+    <string name="sun">Sun</string>
+    <string name="child1">Child 1</string>
+    <string name="child2">Child 2</string>
+
+
+
+</resources>

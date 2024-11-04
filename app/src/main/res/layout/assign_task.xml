@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    tools:context=".AssignTaskActivity">
+
+    <TextView
+        android:id="@+id/task_name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/task_name_label"
+        android:textSize="24sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/task_name_field"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:hint="@string/task_name_hint"
+        android:inputType="text"
+        android:autofillHints="name"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/task_name_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="50dp" />
+
+
+    <TextView
+        android:id="@+id/repeat_days_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/do_every"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/task_name_field"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <GridLayout
+        android:id="@+id/days_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:columnCount="4"
+        app:layout_constraintTop_toBottomOf="@id/repeat_days_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            style="@style/DayButton"
+            android:text="@string/mon"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white" />
+
+        <Button
+            style="@style/DayButton"
+            android:text="@string/tue"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white" />
+
+        <Button
+            style="@style/DayButton"
+            android:text="@string/wed"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white" />
+
+        <Button
+            style="@style/DayButton"
+            android:text="@string/thu"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white" />
+
+        <Button
+            style="@style/DayButton"
+            android:text="@string/fri"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white" />
+
+        <Button
+            style="@style/DayButton"
+            android:text="@string/sat"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white" />
+
+        <Button
+            style="@style/DayButton"
+            android:text="@string/sun"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white" />
+    </GridLayout>
+
+
+    <TextView
+        android:id="@+id/assign_to_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/assign_to"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/days_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+
+    <LinearLayout
+        android:id="@+id/assign_members_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/assign_to_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <CheckBox
+            android:id="@+id/checkBoxFather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/father"
+            android:textColor="@android:color/black" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMother"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mother"
+            android:textColor="@android:color/black" />
+
+        <CheckBox
+            android:id="@+id/checkBoxChild1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/child1"
+            android:textColor="@android:color/black" />
+
+        <CheckBox
+            android:id="@+id/checkBoxChild2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/child2"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    
+    <Button
+        android:id="@+id/btnCreateTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/create"
+        app:layout_constraintTop_toBottomOf="@id/assign_members_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
